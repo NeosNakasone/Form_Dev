@@ -10,6 +10,8 @@ import { PlanningComponent } from './planning/planning.component';
 import { ParticipantComponent } from './participant/participant.component';
 import { SignatureComponent } from './signature/signature.component';
 import { ProfesseurComponent } from './professeur/professeur.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,13 @@ import { ProfesseurComponent } from './professeur/professeur.component';
     ReactiveFormsModule,//idem en haut
     AppRoutingModule,
     BrowserAnimationsModule,
-    
+    AppRoutingModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the app is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
