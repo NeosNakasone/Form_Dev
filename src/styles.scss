@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+body {
+    margin: 0;
+}
+
+app-root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+app-professeur {
+    flex: 1;
+}
+
+app-connexion {
+    flex: 1;
+}
+
+app-signature {
+    flex: 1;
+}
+
+app-planning {
+    flex: 1;
+}
+
