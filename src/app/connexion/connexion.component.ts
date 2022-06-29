@@ -33,4 +33,9 @@ export class ConnexionComponent implements OnInit {
     this.router.navigateByUrl('/professeur');
   }
 
+  seDeconnecter(){
+    this.authService.deconnecter();
+    this.router.navigateByUrl('/connexion');
+  }
+
 }

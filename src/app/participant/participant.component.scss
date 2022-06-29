@@ -1,0 +1,24 @@
+.topdiv {
+
+    text-align: center;
+}
+
+.middiv {
+    display: flex;
+    text-align: start;   
+}
+
+.lilist {
+        display: flex;
+        justify-content: space-around;
+
+        li {
+            display: flex;
+        }
+}
+
+.divlist {
+    background: #a0a0a0;
+    padding: 210px;
+    text-align: center;
+}

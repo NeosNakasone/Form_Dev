@@ -10,8 +10,8 @@ import { AuthGuard } from './auth.guard';
 
 
 const routes: Routes = [
-  //{ path: '', pathMatch: 'full', redirectTo: 'connexion'},
- // { path: 'auth', component: AuthGuard },
+  { path: '', pathMatch: 'full', redirectTo: 'connexion'},
+  { path: 'auth', component: AuthGuard },
   { path: 'connexion', component: ConnexionComponent, /*canActivate:[AuthGuard] */},
   { path: 'professeur', component: ProfesseurComponent },
   { path: 'planning', component: PlanningComponent },
