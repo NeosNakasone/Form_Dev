@@ -8,7 +8,9 @@
     <a routerLink="seDeconnecter" >Deconnexion</a>
 
   </div>
-</header> 
+</header>
+
+<div *ngIf="!networkStatus"><h3><font color="red">Vous êtes actuellement en mode hors-ligne.</font></h3></div>
 
 <router-outlet></router-outlet>
 
