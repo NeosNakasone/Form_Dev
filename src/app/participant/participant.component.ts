@@ -14,6 +14,18 @@ export class ParticipantComponent implements OnInit {
   ngOnInit() {
   }
 
+  navigPlan() {
+    this.router.navigateByUrl('/planning');
+  }
+
+  navigSign() {
+    this.router.navigateByUrl('/signature');
+  }
+
+  navigPart() {
+    this.router.navigateByUrl('/participant');
+  }
+
   seDeconnecter(){
     this.authService.deconnecter();
     this.router.navigateByUrl('/connexion');

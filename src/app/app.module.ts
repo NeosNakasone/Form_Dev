@@ -11,6 +11,8 @@ import { ParticipantComponent } from './participant/participant.component';
 import { SignatureComponent } from './signature/signature.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { QRCodeModule } from 'angularx-qrcode';
+import { AngularSignaturePadModule } from '@almothafar/angular-signature-pad';
 
 @NgModule({
   declarations: [
@@ -24,15 +26,16 @@ import { environment } from '../environments/environment';
     BrowserModule,
     FormsModule,//import pour formulaire reactif
     ReactiveFormsModule,//idem en haut
-    AppRoutingModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    QRCodeModule,
+    AngularSignaturePadModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
       // Register the ServiceWorker as soon as the app is stable
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
-    })
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -19,4 +19,13 @@ export class EtudiantComponent implements OnInit {
     this.router.navigateByUrl('/connexion');
   }
 
+  item = [{
+    'nom': 'Agatha Harkness',
+    'classe': 'B2',
+    'professeur': 'Stan Lee'
+  }]
+
+  qrInfo = JSON.stringify(this.item);
+
+
 }

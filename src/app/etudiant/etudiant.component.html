@@ -1,18 +1,21 @@
 <header class="page-header">
     <div class="topnav">
-  
+
       <a routerLink="planning" >Accueil</a>
       <div class="spacer"></div>
       <h2>Form Dev</h2>
       <div class="spacer"></div>
-      <a routerLink="seDeconnecter" >Deconnexion</a>
-  
+      <a routerLink (click)="seDeconnecter" >Deconnexion</a>
+
     </div>
-  </header> 
+  </header>
 
 
 
 <div class="titre">
     <h1>QrCode de signature</h1>
 </div>
-<qr-code class="qrcode" [value]="'test de qr code pour signature'"></qr-code>
+
+<!-- 1ERE VERSION <qr-code class="qrcode" [value]="'test de qr code pour signature'"></qr-code> -->
+<!-- 2E VERSION <qrcode [qrdata]="'Your data string'" [width]="256" [errorCorrectionLevel]="'M'"></qrcode> -->
+

@@ -22,7 +22,18 @@ export class ConnexionComponent implements OnInit {
      
   }
   get formControls() { return this.loginForm.controls; }
-  seConnecter(){
+
+  seConnecterEtude(){
+    console.log(this.loginForm.value);
+    this.isSubmitted = true;
+    if(this.loginForm.invalid){
+      return;
+    }
+    this.authService.seConnecter(this.loginForm.value);
+    this.router.navigateByUrl('/etudiant');
+  }
+
+  seConnecterProf(){
     console.log(this.loginForm.value);
     this.isSubmitted = true;
     if(this.loginForm.invalid){
