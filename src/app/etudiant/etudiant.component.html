@@ -10,18 +10,9 @@
     </div>
   </header> 
 
-<div class="spacer"></div>
 
 
-<div class="padsignat">
-    <signature-pad #sigPad></signature-pad>
-
-    <b>value:</b>
-
-    <pre>
-    {{sigPad | json}} 
-    </pre>
-
-    <button (click)="sigPad.clear()">Effacer</button>
-
+<div class="titre">
+    <h1>QrCode de signature</h1>
 </div>
+<qr-code class="qrcode" [value]="'test de qr code pour signature'"></qr-code>

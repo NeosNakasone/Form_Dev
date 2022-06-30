@@ -60,4 +60,24 @@ div {
   .text {
     justify-content: space-around;
   }
-  
+
+
+
+.spacer {
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+.qrcode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    
+}

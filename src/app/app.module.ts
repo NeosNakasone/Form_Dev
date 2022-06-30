@@ -9,16 +9,18 @@ import { ConnexionComponent } from './connexion/connexion.component';
 import { PlanningComponent } from './planning/planning.component';
 import { ParticipantComponent } from './participant/participant.component';
 import { SignatureComponent } from './signature/signature.component';
-import { ProfesseurComponent } from './professeur/professeur.component';
+import { QRCodeModule } from 'angular2-qrcode';
+import { EtudiantComponent } from './etudiant/etudiant.component';
+import { AngularSignaturePadModule } from '@almothafar/angular-signature-pad';
 
 @NgModule({
   declarations: [
     AppComponent,
     ConnexionComponent,
-    ProfesseurComponent,
     PlanningComponent,
     ParticipantComponent,
     SignatureComponent,
+    EtudiantComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,8 @@ import { ProfesseurComponent } from './professeur/professeur.component';
     ReactiveFormsModule,//idem en haut
     AppRoutingModule,
     BrowserAnimationsModule,
-    
+    QRCodeModule,
+    AngularSignaturePadModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

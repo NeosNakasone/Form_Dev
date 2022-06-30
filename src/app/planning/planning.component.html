@@ -1,2 +1,19 @@
+<header class="page-header">
+    <div class="topnav">
+  
+      <a routerLink="planning" >Accueil</a>
+      <div class="spacer"></div>
+      <h2>Form Dev</h2>
+      <div class="spacer"></div>
+      <a routerLink="Participant" routerLinkActive="active">Participant</a>
+      <a routerLink (click)="seDeconnecter">
+        Se déconnecter
+      </a>
+  
+    </div>
+  </header> 
+  <router-outlet></router-outlet>
+
+
 <div class="boxmain"> Affichage du planning (via un module), ou des cards (on devrait pouvoir avoir une liste de card depuis le back, donc boucler sur ça et l’afficher), suivant la vue actuelle sélectionnée
     Afficher le nom + la durée et le lieu des modules dans l’affichage</div>

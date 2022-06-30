@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from  '@angular/forms';
 import { Router } from  '@angular/router';
-import { Utilisateur } from  '../utilisateur';
 import { AuthService } from  '../auth.service';
 
 @Component({
@@ -10,7 +9,7 @@ import { AuthService } from  '../auth.service';
   styleUrls: ['./connexion.component.scss']
 })
 export class ConnexionComponent implements OnInit {
-  loginForm: FormGroup; //j'ai
+  loginForm: FormGroup; 
   isSubmitted  =  false;
   constructor(private authService: AuthService,
     private router: Router, private formBuilder: FormBuilder ) {
@@ -30,7 +29,7 @@ export class ConnexionComponent implements OnInit {
       return;
     }
     this.authService.seConnecter(this.loginForm.value);
-    this.router.navigateByUrl('/professeur');
+    this.router.navigateByUrl('/planning');
   }
 
   seDeconnecter(){
