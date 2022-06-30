@@ -14,6 +14,10 @@ export class ParticipantComponent implements OnInit {
   ngOnInit() {
   }
 
+  navigQr() {
+    this.router.navigateByUrl('/etudiant');
+  }
+
   navigPlan() {
     this.router.navigateByUrl('/planning');
   }
