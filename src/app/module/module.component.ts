@@ -4,10 +4,10 @@ import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-participant',
-  templateUrl: './participant.component.html',
-  styleUrls: ['./participant.component.scss']
+  templateUrl: './module.component.html',
+  styleUrls: ['./module.component.scss']
 })
-export class ParticipantComponent implements OnInit {
+export class ModuleComponent implements OnInit {
 
   constructor(private authService: AuthService, private router: Router) { }
 
@@ -27,7 +27,11 @@ export class ParticipantComponent implements OnInit {
   }
 
   navigPart() {
-    this.router.navigateByUrl('/participant');
+    this.router.navigateByUrl('/module');
+  }
+
+  navigDashboard() {
+    this.router.navigateByUrl('/dashboard');
   }
 
   seDeconnecter(){

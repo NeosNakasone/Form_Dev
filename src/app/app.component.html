@@ -1,4 +1,3 @@
-  <div *ngIf="!networkStatus"><h3><font color="red">Vous êtes actuellement en mode hors-ligne.</font></h3></div>
-  
-  <router-outlet></router-outlet>
-  
+<div *ngIf="!networkStatus"><h3 class="disconnected">Vous êtes actuellement en mode hors-ligne.</h3></div>
+
+<router-outlet></router-outlet>

@@ -36,7 +36,11 @@ export class SignatureComponent implements OnInit {
   }
 
   navigPart() {
-    this.router.navigateByUrl('/participant');
+    this.router.navigateByUrl('/module');
+  }
+
+  navigDashboard() {
+    this.router.navigateByUrl('/dashboard');
   }
 
   seDeconnecter(){

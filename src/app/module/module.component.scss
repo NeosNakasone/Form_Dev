@@ -3,10 +3,9 @@ div {
   justify-content: center;
 }
 
-.disconnected {
-  color: red;
-  font-weight: bold;
-  font-size: 30px;
+h1 {
+  display: flex;
+  justify-content: center;
 }
 
 .topnav {
@@ -65,4 +64,38 @@ div {
 
 .text {
   justify-content: space-around;
+}
+
+
+
+.spacer {
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+
+.topdiv {
+  text-align: center;
+}
+
+.middiv {
+  display: flex;
+  justify-content: space-around;
+}
+
+.lilist {
+  display: flex;
+  justify-content: space-around;
+
+  li {
+    display: flex;
+  }
+}
+
+.divlist {
+  background: #a0a0a0;
+  padding: 210px;
+  text-align: center;
 }

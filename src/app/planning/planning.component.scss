@@ -2,7 +2,12 @@ div {
     display: flex;
     justify-content: center;
   }
-  
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
   .topnav {
     /* écriture de la nav */
     background-color: #333;
@@ -13,7 +18,7 @@ div {
     @media screen and (max-width: 800px) {
       flex-direction: column;
     }
-  
+
     a {
       color: #f2f2f2;
       text-align: center;
@@ -23,21 +28,21 @@ div {
       }
       text-decoration: none;
       font-size: 17px;
-  
+
       &:hover {
         background-color: #ddd;
         color: black;
       }
-  
+
       &.active {
         background-color: skyblue;
         color: white;
         align-items: flex-end;
       }
-  
-  
+
+
     }
-  
+
     h2 {
       margin-left: 20px;
       float: left;
@@ -47,16 +52,16 @@ div {
       }
     }
   }
-  
+
   .spacer {
     flex: 1;
   }
-  
+
   .page-header {
     position: sticky;
     top: 0;
   }
-  
+
   .text {
     justify-content: space-around;
   }

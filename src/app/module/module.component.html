@@ -6,23 +6,25 @@
       <h2>Form Dev</h2>
       <div class="spacer"></div>
       <a routerLink="planning" (click)="navigPlan()" routerLinkActive="active">Planning</a>
-      <a routerLink="participant" (click)="navigPart()"  routerLinkActive="active">Participant</a>
+      <a routerLink="module" (click)="navigPart()"  routerLinkActive="active">Module</a>
       <a routerLink="signature" (click)="navigSign()"  routerLinkActive="active">Signature</a>
+      <a routerLink="dashboard" (click)="navigDashboard()"  routerLinkActive="active">Tableau de Bord</a>
       <a routerLink (click)="seDeconnecter" >Deconnexion</a>
 
     </div>
   </header>
 
-
+<h1>Détails du module</h1>
 
 <div class="topdiv">
-    <p>Nom du module</p>
-    <p>Lieu - Durée du Module</p>
-
+    <p>Nom du module<br />
+      Lieu - Durée du Module</p>
 </div>
 
-<div class="middiv">Envoyer un e-mail de signature
-
+<div class="middiv">
+  <button>Ouvrir le module</button>
+  <button>Laisser un commentaire sur le module</button>
+  <button>Envoyer les e-mails de signature</button>
 </div>
 
 <div class="lilist">
@@ -33,6 +35,6 @@
 
 <div class="divlist">
     <p>Liste des participants au format :
-        checkbox + Nom Prénom + statut + bouton “signer” + bouton “Absent ?” + bouton “Commentaire”</p>
+        checkbox + Nom Prénom + statut + bouton “signer” + bouton “Absent” + bouton “Commentaire”</p>
 
 </div>

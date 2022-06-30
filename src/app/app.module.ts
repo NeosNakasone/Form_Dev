@@ -7,20 +7,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { PlanningComponent } from './planning/planning.component';
-import { ParticipantComponent } from './participant/participant.component';
+import { ModuleComponent } from './module/module.component';
 import { SignatureComponent } from './signature/signature.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { QRCodeModule } from 'angularx-qrcode';
 import { AngularSignaturePadModule } from '@almothafar/angular-signature-pad';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ConnexionComponent,
     PlanningComponent,
-    ParticipantComponent,
+    ModuleComponent,
     SignatureComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
